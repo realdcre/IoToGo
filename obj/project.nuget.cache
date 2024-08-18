@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "SRWRTNNJxgs=",
+  "success": true,
+  "projectFilePath": "F:\\dev\\IoToGo\\IoToGo\\IoToGo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Constantin Jacob\\.nuget\\packages\\microsoft-windowsapicodepack-core\\1.1.5\\microsoft-windowsapicodepack-core.1.1.5.nupkg.sha512",
+    "C:\\Users\\Constantin Jacob\\.nuget\\packages\\microsoft-windowsapicodepack-shell\\1.1.5\\microsoft-windowsapicodepack-shell.1.1.5.nupkg.sha512",
+    "C:\\Users\\Constantin Jacob\\.nuget\\packages\\system.windows.extensions\\9.0.0-preview.7.24405.7\\system.windows.extensions.9.0.0-preview.7.24405.7.nupkg.sha512"
+  ],
+  "logs": []
+}

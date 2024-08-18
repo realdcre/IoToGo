@@ -1,0 +1,8 @@
+F:\dev\IoToGo\IoToGo\obj\Debug\net8.0-windows\IoToGo.csproj.AssemblyReference.cache
+F:\dev\IoToGo\IoToGo\obj\Debug\net8.0-windows\MainWindow.baml
+F:\dev\IoToGo\IoToGo\obj\Debug\net8.0-windows\MainWindow.g.cs
+F:\dev\IoToGo\IoToGo\obj\Debug\net8.0-windows\Window1.g.cs
+F:\dev\IoToGo\IoToGo\obj\Debug\net8.0-windows\Window2.g.cs
+F:\dev\IoToGo\IoToGo\obj\Debug\net8.0-windows\App.g.cs
+F:\dev\IoToGo\IoToGo\obj\Debug\net8.0-windows\IoToGo_MarkupCompile.cache
+F:\dev\IoToGo\IoToGo\obj\Debug\net8.0-windows\IoToGo_MarkupCompile.lref

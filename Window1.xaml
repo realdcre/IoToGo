@@ -1,0 +1,21 @@
+﻿<Window x:Class="IoToGo.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IoToGo"
+        mc:Ignorable="d"
+        Title="IoToGo - Rufus" Height="386" Width="400">
+    <Grid Background="Black">
+        <Rectangle HorizontalAlignment="Left" Height="133" Margin="159,21,0,0" Stroke="Black" VerticalAlignment="Top" Width="217">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/assets/img/USB_Thumb_Drive_2-3567682164.png" Stretch="Uniform"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="166" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" Foreground="White" FontSize="20"><Run Text="Plug In a USB-Drive."/><LineBreak/><Run/><LineBreak/><Run Text="Please make sure you have your data Backed up."/><LineBreak/><Run/><LineBreak/><Run Text="Minimum Size: 8 GB"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="45" Margin="285,109,0,0" TextWrapping="Wrap" Text="8GB" VerticalAlignment="Top" Width="91" Foreground="White" FontSize="18" FontWeight="Bold"/>
+        <Button Content="OK" HorizontalAlignment="Center" Height="31" Margin="0,264,0,0" VerticalAlignment="Top" Width="345" Background="Black" Foreground="White" Click="ok" />
+        <Button Content="Next" HorizontalAlignment="Center" Height="31" Margin="0,311,0,0" VerticalAlignment="Top" Width="345" Background="Black" Foreground="White" Click="next" />
+        <TextBlock HorizontalAlignment="Center" Height="64" Margin="0,231,0,0" TextWrapping="Wrap" Text="In the next window, select your USB stick and the ISO-File. It is located in your running directory &gt; IoToGo" VerticalAlignment="Top" Width="344" Foreground="White"/>
+    </Grid>
+</Window>
