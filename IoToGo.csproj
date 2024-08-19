@@ -9,8 +9,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="assets\img\computer-software-clipart-7-1183301770.png" />
+    <None Remove="assets\img\Microsoft-Store-featured-image-3482941301.jpg" />
+    <None Remove="assets\img\th-437322438.png" />
+    <None Remove="assets\img\th-801863008.jpg" />
+    <None Remove="assets\img\USB_Thumb_Drive_2-3567682164.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft-WindowsAPICodePack-Shell" Version="1.1.5" />
     <PackageReference Include="System.Windows.Extensions" Version="9.0.0-preview.7.24405.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\img\computer-software-clipart-7-1183301770.png" />
+    <Resource Include="assets\img\Microsoft-Store-featured-image-3482941301.jpg" />
+    <Resource Include="assets\img\th-437322438.png" />
+    <Resource Include="assets\img\th-801863008.jpg" />
+    <Resource Include="assets\img\USB_Thumb_Drive_2-3567682164.png" />
   </ItemGroup>
 
 </Project>

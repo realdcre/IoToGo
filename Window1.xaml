@@ -16,6 +16,6 @@
         <TextBlock HorizontalAlignment="Left" Height="45" Margin="285,109,0,0" TextWrapping="Wrap" Text="8GB" VerticalAlignment="Top" Width="91" Foreground="White" FontSize="18" FontWeight="Bold"/>
         <Button Content="OK" HorizontalAlignment="Center" Height="31" Margin="0,264,0,0" VerticalAlignment="Top" Width="345" Background="Black" Foreground="White" Click="ok" />
         <Button Content="Next" HorizontalAlignment="Center" Height="31" Margin="0,311,0,0" VerticalAlignment="Top" Width="345" Background="Black" Foreground="White" Click="next" />
-        <TextBlock HorizontalAlignment="Center" Height="64" Margin="0,231,0,0" TextWrapping="Wrap" Text="In the next window, select your USB stick and the ISO-File. It is located in your running directory &gt; IoToGo" VerticalAlignment="Top" Width="344" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Center" Height="48" Margin="0,231,0,0" TextWrapping="Wrap" Text="In the next window, select your USB stick and the ISO-File. It is located in your running directory &gt; IoToGo" VerticalAlignment="Top" Width="344" Foreground="White"/>
     </Grid>
 </Window>

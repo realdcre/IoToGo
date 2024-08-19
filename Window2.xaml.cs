@@ -14,7 +14,7 @@ namespace IoToGo
     {
         private string newFolderPath = "your_default_folder_path"; // Ensure this is properly initialized
 
-        public Window2()
+        public Window2(string path)
         {
             InitializeComponent();
         }
@@ -84,7 +84,7 @@ namespace IoToGo
 
         private async void download(object sender, RoutedEventArgs e)
         {
-            await DownloadFileToFolderAsync("https://github.com/kr0tchet/LTSC-Add-MicrosoftStore-2021/archive/refs/heads/master.zip", newFolderPath, new CancellationToken());
+            await DownloadFileToFolderAsync("https://github.com/kr0tchet/LTSC-Add-MicrosoftStore-2021/archive/refs/heads/master.zip", path, new CancellationToken());
             Window3 newWindow = new Window3();
             newWindow.Show();
             this.Close();

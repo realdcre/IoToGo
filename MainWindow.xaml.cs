@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Net.Http;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
@@ -13,14 +14,14 @@ namespace WpfApp
     {
         private string? _downloadFolderPath = null;
         private CancellationTokenSource? _cancellationTokenSource = null;
-
+        public string path = init_folder();
         public MainWindow()
         {
             InitializeComponent();
-            init_folder();
+          
         }
 
-        private void init_folder()
+        public string init_folder()
         {
             var dialog = new CommonOpenFileDialog
             {
@@ -135,9 +136,13 @@ namespace WpfApp
 
         private void skip()
         {
-            Window1 newWindow = new Window1();
+            Window1 newWindow = new Window1(path);
             newWindow.Show();
             this.Close();
+        }
+        private void isoskip(object sender, RoutedEventArgs e)
+        {
+            skip();
         }
     }
 }
