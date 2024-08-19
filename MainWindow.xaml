@@ -11,7 +11,7 @@
         <Button Content="Download ISO" HorizontalAlignment="Center" Height="70" VerticalAlignment="Center" Width="228" Background="Black" Foreground="White" Click="download" />
         <TextBlock HorizontalAlignment="Left" Height="23" Margin="20,244,0,0" TextWrapping="Wrap" Text="This downloads the ISO file for Windows 10 IoT Enterprise LTSC 2019" VerticalAlignment="Top" Width="380" Background="Black" Foreground="White"/>
         <ProgressBar x:Name="DownloadProgressBar" HorizontalAlignment="Center" VerticalAlignment="Top" Width="300" Height="20" Margin="0,282,0,0" Background="Black" BorderBrush="#FF707070"/>
-        <Button x:Name="CancelButton" Content="Cancel Download" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,322,0,0" IsEnabled="False" Click="CancelButton_Click" Foreground="Black" Background="Black" BorderBrush="#FF707070" OpacityMask="White"/>
+        <Button x:Name="CancelButton" Content="Cancel Download" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,322,0,0" IsEnabled="False" Click="CancelButton_Click" Foreground="White" Background="Black" BorderBrush="#FF707070"/>
         <Button Content="Skip" HorizontalAlignment="Left" Height="19" Margin="314,322,0,0" VerticalAlignment="Top" Width="66" Background="Black" Foreground="White" Click="isoskip" />
     </Grid>
 </Window>

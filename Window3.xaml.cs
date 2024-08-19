@@ -10,10 +10,10 @@ namespace IoToGo
     {
         private string _downloadFolderPath;
 
-        public Window3()
+        public Window3(string path)
         {
             InitializeComponent();
-            _downloadFolderPath = "Your default folder path here";  // Assign or initialize the download folder path appropriately
+            _downloadFolderPath = path;  // Assign or initialize the download folder path appropriately
         }
 
         private async Task DownloadFileAsync(string fileUrl, string fileName)
@@ -54,7 +54,7 @@ namespace IoToGo
                         }
                     }
 
-                    MessageBox.Show($"File downloaded successfully to: {filePath}", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                   
                 }
                 catch (Exception ex)
                 {

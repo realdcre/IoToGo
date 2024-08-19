@@ -7,16 +7,14 @@ using System.Windows;
 
 namespace IoToGo
 {
-    /// <summary>
-    /// Interaction logic for Window2.xaml
-    /// </summary>
     public partial class Window2 : Window
     {
-        private string newFolderPath = "your_default_folder_path"; // Ensure this is properly initialized
+        private string path;
 
         public Window2(string path)
         {
             InitializeComponent();
+            this.path = path;  // Store the passed path value
         }
 
         private async Task DownloadFileToFolderAsync(string fileUrl, string downloadFolderPath, CancellationToken cancellationToken)
@@ -27,8 +25,8 @@ namespace IoToGo
                 return;
             }
 
-            string fileName = System.IO.Path.GetFileName(new Uri(fileUrl).LocalPath);
-            string filePath = System.IO.Path.Combine(downloadFolderPath, fileName);
+            string fileName = Path.GetFileName(new Uri(fileUrl).LocalPath);
+            string filePath = Path.Combine(downloadFolderPath, fileName);
 
             using (var client = new HttpClient())
             {
@@ -57,7 +55,6 @@ namespace IoToGo
                                 Dispatcher.Invoke(() => DownloadProgressBar.Value = progress * 100);
                             }
 
-                            // Check if cancellation was requested
                             if (cancellationToken.IsCancellationRequested)
                             {
                                 MessageBox.Show("Download canceled.", "Canceled", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -68,12 +65,12 @@ namespace IoToGo
 
                     if (!cancellationToken.IsCancellationRequested)
                     {
-                        MessageBox.Show($"File downloaded successfully to: {filePath}", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                        
                     }
                 }
                 catch (OperationCanceledException)
                 {
-                    // Handle the case where the download was canceled
+                    MessageBox.Show("Download canceled.", "Canceled", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 catch (Exception ex)
                 {
@@ -84,23 +81,26 @@ namespace IoToGo
 
         private async void download(object sender, RoutedEventArgs e)
         {
-            await DownloadFileToFolderAsync("https://github.com/kr0tchet/LTSC-Add-MicrosoftStore-2021/archive/refs/heads/master.zip", path, new CancellationToken());
-            Window3 newWindow = new Window3();
+            string newFolderPath = Path.Combine(path);
+
+            if (!Directory.Exists(newFolderPath))
+            {
+                Directory.CreateDirectory(newFolderPath);
+            }
+
+            var cts = new CancellationTokenSource();
+            await DownloadFileToFolderAsync("https://github.com/kr0tchet/LTSC-Add-MicrosoftStore-2021/archive/refs/heads/master.zip", newFolderPath, cts.Token);
+            Window3 newWindow = new Window3(path);
             newWindow.Show();
             this.Close();
         }
-
         private void skip(object sender, RoutedEventArgs e)
         {
-            // Implement the skip logic here
-            Window3 newWindow = new Window3();
-
-            // Show the new window
+            Window3 newWindow = new Window3(path);
             newWindow.Show();
-
-
-            // Close the current window
             this.Close();
+            
         }
+
     }
-    }
+}

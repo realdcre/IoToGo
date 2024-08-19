@@ -1,0 +1,7 @@
+F:\dev\Release\IoToGo\IoToGo.pdb
+F:\dev\Release\IoToGo\D3DCompiler_47_cor3.dll
+F:\dev\Release\IoToGo\PenImc_cor3.dll
+F:\dev\Release\IoToGo\PresentationNative_cor3.dll
+F:\dev\Release\IoToGo\vcruntime140_cor3.dll
+F:\dev\Release\IoToGo\wpfgfx_cor3.dll
+F:\dev\Release\IoToGo\IoToGo.exe

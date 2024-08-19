@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IoToGo"
         mc:Ignorable="d"
-         Title="IoToGo - Activation" Height="414" Width="400">
+         Title="IoToGo - Activation" Height="414" Width="400" ResizeMode="NoResize">
     <Grid Background="Black">
         <Rectangle HorizontalAlignment="Left" Height="0" Margin="-128,143,0,0" Stroke="Black" VerticalAlignment="Top" Width="5"/>
         <Rectangle HorizontalAlignment="Left" Height="422" Margin="-383,-202,0,0" Stroke="Black" VerticalAlignment="Top" Width="865">

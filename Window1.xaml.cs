@@ -7,23 +7,22 @@ using System.Windows;
 
 namespace IoToGo
 {
-    /// <summary>
-    /// Interaction logic for Window1.xaml
-    /// </summary>
     public partial class Window1 : Window
     {
         public bool ranrufus = false;
+        private string path;
+
         public Window1(string path)
         {
             InitializeComponent();
+            this.path = path;  // Store the passed path value
         }
 
         private static readonly HttpClient httpClient = new HttpClient();
 
         public async Task DownloadRunAndCleanupToolAsync(string url, string fileName)
         {
-            // Use the default Downloads folder in the system
-            string downloadsFolder = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\Downloads";
+            string downloadsFolder = path;  // Use the path from MainWindow
             string filePath = Path.Combine(downloadsFolder, fileName);
 
             try
@@ -38,8 +37,7 @@ namespace IoToGo
 
                     if (process != null)
                     {
-                        // Wait for the process to exit
-                        process.WaitForExit();
+                        process.WaitForExit();  // Wait for the process to exit
                     }
                 });
 
@@ -73,7 +71,7 @@ namespace IoToGo
             catch (Exception ex)
             {
                 MessageBox.Show($"Error during download: {ex.Message}", "Download Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                throw; // Re-throw the exception to handle it in the calling method
+                throw;  // Re-throw the exception to handle it in the calling method
             }
         }
 
@@ -84,7 +82,7 @@ namespace IoToGo
                 ProcessStartInfo processStartInfo = new ProcessStartInfo
                 {
                     FileName = filePath,
-                    UseShellExecute = true // Allows the file to be executed
+                    UseShellExecute = true  // Allows the file to be executed
                 };
                 return Process.Start(processStartInfo);
             }
@@ -97,7 +95,6 @@ namespace IoToGo
 
         private void CleanupFile(string filePath)
         {
-            // Ensure the file is not in use and then delete it
             if (File.Exists(filePath))
             {
                 try
@@ -125,8 +122,6 @@ namespace IoToGo
             if (ranrufus)
             {
                 Window2 newWindow = new Window2(path);
-
-                // Show the new window
                 newWindow.Show();
                 this.Close();
             }
@@ -137,4 +132,3 @@ namespace IoToGo
         }
     }
 }
-

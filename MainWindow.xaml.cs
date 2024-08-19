@@ -14,11 +14,12 @@ namespace WpfApp
     {
         private string? _downloadFolderPath = null;
         private CancellationTokenSource? _cancellationTokenSource = null;
-        public string path = init_folder();
+        public string path;
+
         public MainWindow()
         {
             InitializeComponent();
-          
+            path = init_folder();  // Initialize the 'path' variable
         }
 
         public string init_folder()
@@ -40,18 +41,23 @@ namespace WpfApp
                     if (!Directory.Exists(newFolderPath))
                     {
                         Directory.CreateDirectory(newFolderPath);
-                        MessageBox.Show($"Folder created successfully at: {newFolderPath}", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                        
                     }
                     else
                     {
-                        MessageBox.Show("Folder already exists.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        
                     }
+
+                    return newFolderPath;  // Return the created folder path
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show($"Error creating folder: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return null;
                 }
             }
+
+            return null;  // Default return value if dialog is canceled
         }
 
         private async Task DownloadFileToFolderAsync(string fileUrl, string downloadFolderPath, CancellationToken cancellationToken)
@@ -102,12 +108,24 @@ namespace WpfApp
 
                     if (!cancellationToken.IsCancellationRequested)
                     {
-                        MessageBox.Show($"File downloaded successfully to: {filePath}", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                        
                     }
                 }
                 catch (OperationCanceledException)
                 {
-                    skip();
+                    if (File.Exists(filePath))
+                    {
+                        try
+                        {
+                            File.Delete(filePath);
+                        }
+                    catch {
+                            
+                        }
+                        }
+
+                           
+
                 }
                 catch (Exception ex)
                 {
@@ -123,7 +141,7 @@ namespace WpfApp
 
         private async void download(object sender, RoutedEventArgs e)
         {
-            init_folder();
+            //path = init_folder();  // Initialize path here if it hasn't been already
             _cancellationTokenSource = new CancellationTokenSource();
             CancelButton.IsEnabled = true;
 
@@ -140,6 +158,7 @@ namespace WpfApp
             newWindow.Show();
             this.Close();
         }
+
         private void isoskip(object sender, RoutedEventArgs e)
         {
             skip();

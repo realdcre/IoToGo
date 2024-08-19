@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IoToGo"
         mc:Ignorable="d"
-        Title="IoToGo - Rufus" Height="386" Width="400">
+        Title="IoToGo - Rufus" Height="386" Width="400" ResizeMode="NoResize">
     <Grid Background="Black">
         <Rectangle HorizontalAlignment="Left" Height="133" Margin="159,21,0,0" Stroke="Black" VerticalAlignment="Top" Width="217">
             <Rectangle.Fill>
