@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IoToGo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccc805ed4fe79035ad22f6a2dd52f45caf2adbd0")]
 [assembly: System.Reflection.AssemblyProductAttribute("IoToGo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IoToGo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

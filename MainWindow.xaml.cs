@@ -11,8 +11,8 @@ namespace WpfApp
 {
     public partial class MainWindow : Window
     {
-        private string _downloadFolderPath;
-        private CancellationTokenSource _cancellationTokenSource;
+        private string? _downloadFolderPath = null;
+        private CancellationTokenSource? _cancellationTokenSource = null;
 
         public MainWindow()
         {
@@ -40,8 +40,6 @@ namespace WpfApp
                     {
                         Directory.CreateDirectory(newFolderPath);
                         MessageBox.Show($"Folder created successfully at: {newFolderPath}", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-
-                        // Start downloading file after folder creation
                     }
                     else
                     {
@@ -93,7 +91,6 @@ namespace WpfApp
                                 Dispatcher.Invoke(() => DownloadProgressBar.Value = progress * 100);
                             }
 
-                            // Check if cancellation was requested
                             if (cancellationToken.IsCancellationRequested)
                             {
                                 MessageBox.Show("Download canceled.", "Canceled", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -109,7 +106,7 @@ namespace WpfApp
                 }
                 catch (OperationCanceledException)
                 {
-                    // Handle the case where the download was canceled
+                    skip();
                 }
                 catch (Exception ex)
                 {
@@ -129,20 +126,17 @@ namespace WpfApp
             _cancellationTokenSource = new CancellationTokenSource();
             CancelButton.IsEnabled = true;
 
-            string newFolderPath = Path.Combine(_downloadFolderPath, "IoToGo"); // Ensure this path is correct
+            string newFolderPath = Path.Combine(_downloadFolderPath, "IoToGo");
 
             await DownloadFileToFolderAsync("https://drive.massgrave.dev/en-us_windows_10_iot_enterprise_ltsc_2021_x64_dvd_257ad90f.iso", newFolderPath, _cancellationTokenSource.Token);
             CancelButton.IsEnabled = false;
+            skip();
         }
 
-        public void skip(object sender, RoutedEventArgs e)
+        private void skip()
         {
             Window1 newWindow = new Window1();
-
-            // Show the new window
             newWindow.Show();
-
-            // Close the current window
             this.Close();
         }
     }

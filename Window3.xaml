@@ -5,43 +5,77 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IoToGo"
         mc:Ignorable="d"
-        Title="IoToGo - Software" Height="450" Width="800">
-    <Grid Background="Black">
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="28,50,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c1"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="28,78,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c2"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="28,106,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c3"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="28,134,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c4"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="28,162,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c5"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="28,190,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c6"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="28,216,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c7"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="414,48,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c8"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="414,76,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c9"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="414,104,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c10"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="414,132,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c11"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="414,160,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c12"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="414,188,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c13"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="414,216,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c14"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="210,50,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c15"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="210,78,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c16"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="210,106,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c17"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="210,134,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c18"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="596,48,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c22"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="596,76,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c23"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="596,104,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c24"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="596,132,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c25"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="596,160,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c26"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="596,188,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c27"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="596,216,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c28"/>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="49,48,0,0" TextWrapping="Wrap" Text="Intel Wi-Fi" VerticalAlignment="Top" Width="152" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="49,76,0,0" TextWrapping="Wrap" Text="Intel Bluetooth" VerticalAlignment="Top" Width="152" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="49,104,0,0" TextWrapping="Wrap" Text="Nvidia RTX 3060" VerticalAlignment="Top" Width="152" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="49,132,0,0" TextWrapping="Wrap" Text="Nvidia RTX 3060TI" VerticalAlignment="Top" Width="152" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="50,160,0,0" TextWrapping="Wrap" Text="Nvidia RTX 4060" VerticalAlignment="Top" Width="152" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="49,188,0,0" TextWrapping="Wrap" Text="Intel Ethernet" VerticalAlignment="Top" Width="152" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="50,214,0,0" TextWrapping="Wrap" Text="AMD Driver Utility" VerticalAlignment="Top" Width="152" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="232,48,0,0" TextWrapping="Wrap" Text="Logitech G Hub" VerticalAlignment="Top" Width="152" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="232,76,0,0" TextWrapping="Wrap" Text="DS4 Controller Driver" VerticalAlignment="Top" Width="152" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="232,104,0,0" TextWrapping="Wrap" Text="Realtek Driver Util" VerticalAlignment="Top" Width="152" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Height="20" Margin="232,132,0,0" TextWrapping="Wrap" Text="MSI Center" VerticalAlignment="Top" Width="152" Foreground="White"/>
+        Title="IoToGo - Software" Height="540" Width="800">
+    <Grid Background="Black" Margin="0,0,0,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="61*"/>
+            <ColumnDefinition Width="739*"/>
+        </Grid.ColumnDefinitions>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,162,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c1" Grid.Column="1"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,190,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c2" Grid.Column="1"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,218,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c3" Grid.Column="1"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,246,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c4" Grid.Column="1"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,274,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c5" Grid.Column="1"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,302,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c6" Grid.Column="1"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,328,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c7" Grid.Column="1"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,160,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c8" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,188,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c9" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,216,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c10" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,244,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c11" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,272,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c12" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,300,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c13" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,328,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c14" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="156,162,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c15" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="156,190,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c16" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="156,218,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c17" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="156,246,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c18" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="542,160,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c22" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="542,188,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c23" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="542,216,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c24" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="542,244,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c25" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="542,272,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c26" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="542,300,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c27" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="542,328,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c28" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="44,160,0,0" TextWrapping="Wrap" Text="Intel Wi-Fi" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="44,188,0,0" TextWrapping="Wrap" Text="Intel Bluetooth" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="44,216,0,0" TextWrapping="Wrap" Text="Nvidia RTX 3060" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="44,244,0,0" TextWrapping="Wrap" Text="Nvidia RTX 3060TI" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="45,272,0,0" TextWrapping="Wrap" Text="Nvidia RTX 4060" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="44,300,0,0" TextWrapping="Wrap" Text="Intel Ethernet" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="45,326,0,0" TextWrapping="Wrap" Text="AMD Driver Utility" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="178,160,0,0" TextWrapping="Wrap" Text="Logitech G Hub" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="178,188,0,0" TextWrapping="Wrap" Text="DS4 Controller Driver" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="178,216,0,0" TextWrapping="Wrap" Text="Realtek Driver Util" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="178,244,0,0" TextWrapping="Wrap" Text="MSI Center" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="382,158,0,0" TextWrapping="Wrap" Text="Steam" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="382,186,0,0" TextWrapping="Wrap" Text="Spotify" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="382,214,0,0" TextWrapping="Wrap" Text="Spotify (Modded)" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="382,242,0,0" TextWrapping="Wrap" Text="Epic Games" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="382,270,0,0" TextWrapping="Wrap" Text="Discord" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="382,298,0,0" TextWrapping="Wrap" Text="Discord (Modded)" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="382,326,0,0" TextWrapping="Wrap" Text="Chromium" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="564,158,0,0" TextWrapping="Wrap" Text="Firefox" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="564,186,0,0" TextWrapping="Wrap" Text="Firefox (Hardened)" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="564,214,0,0" TextWrapping="Wrap" Text="PowerToys" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="564,242,0,0" TextWrapping="Wrap" Text="GIMP" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="564,270,0,0" TextWrapping="Wrap" Text="Audacity" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="564,298,0,0" TextWrapping="Wrap" Text="Microsoft Office" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="564,326,0,0" TextWrapping="Wrap" Text="Tor Browser" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="361,10,0,0" TextWrapping="Wrap" Text="Recommended Software" VerticalAlignment="Top" Width="368" Grid.Column="2" Foreground="White" FontSize="24" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="23,10,0,0" TextWrapping="Wrap" Text="Drivers" VerticalAlignment="Top" Width="368" Grid.Column="1" Foreground="White" FontSize="24" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="106" Margin="23,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="368" Foreground="White"><Run Text="IoToGo comes with a wide variety of Drivers."/><LineBreak/><Run/><LineBreak/><Run Text="Select the drivers you want to download here and they will be added to your IoToGo Folder."/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="106" Margin="361,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="368" Foreground="White" Grid.Column="2"><Run Text="IoToGo makes it easy to get the installers for your favourite Software."/><LineBreak/><Run Text="This is useful, as you may want to use them, before the drivers are fully up and running."/><LineBreak/><Run/><LineBreak/><Run Text="Select the Apps and Software you want to download here and they will be added to your IoToGo Folder. "/></TextBlock>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,356,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c19" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Center" Height="16" VerticalAlignment="Top" Width="17" Margin="0,384,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c20" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="382,354,0,0" TextWrapping="Wrap" Text="CPU-z" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="382,382,0,0" TextWrapping="Wrap" Text="GPU-z" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="542,355,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c21" Grid.Column="2"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="17" Margin="542,384,0,0" RenderTransformOrigin="0.299,0.587" x:Name="c29" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="564,354,0,0" TextWrapping="Wrap" Text="MSI Afterburner" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="564,382,0,0" TextWrapping="Wrap" Text="VLC Media Player" VerticalAlignment="Top" Width="152" Foreground="White" Grid.Column="2"/>
+        <Button Content="Download and add" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="30" Margin="22,423,0,0" VerticalAlignment="Top" Width="744" Foreground="White" Background="Black" Click="dl"/>
+        <TextBlock Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="27" Margin="30,476,0,0" TextWrapping="Wrap" Text="This may take a while, depending on your internet speed." VerticalAlignment="Top" Width="400" Foreground="White"/>
+        <Button Grid.Column="2" Content="Skip" HorizontalAlignment="Left" Height="33" Margin="569,467,0,0" VerticalAlignment="Top" Width="136" Foreground="White" Background="Black" Click="skip"/>
     </Grid>
 </Window>

@@ -85,6 +85,9 @@ namespace IoToGo
         private async void download(object sender, RoutedEventArgs e)
         {
             await DownloadFileToFolderAsync("https://github.com/kr0tchet/LTSC-Add-MicrosoftStore-2021/archive/refs/heads/master.zip", newFolderPath, new CancellationToken());
+            Window3 newWindow = new Window3();
+            newWindow.Show();
+            this.Close();
         }
 
         private void skip(object sender, RoutedEventArgs e)
