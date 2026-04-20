@@ -89,7 +89,7 @@ namespace IoToGo
             }
 
             var cts = new CancellationTokenSource();
-            await DownloadFileToFolderAsync("https://github.com/kr0tchet/LTSC-Add-MicrosoftStore-2021/archive/refs/heads/master.zip", newFolderPath, cts.Token);
+            await DownloadFileToFolderAsync("https://github.com/megakarlach/LTSC-Add-MicrosoftStore-2021/archive/refs/heads/master.zip", newFolderPath, cts.Token);
             Window3 newWindow = new Window3(path);
             newWindow.Show();
             this.Close();
